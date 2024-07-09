@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Tributo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tributo (kemuel)</h1>
+        <div class="form-group">
+            <label for="valor">Valor da Nota:</label>
+            <input type="text" id="valor" placeholder="Insira o valor">
+            <button onclick="calcularTributos()">Calcular</button>
+        </div>
+        <div class="result" id="resultado">
+            <div>PIS: R$ <span id="pis">0.00</span></div>
+            <div>COFINS: R$ <span id="cofins">0.00</span></div>
+            <div>IR: R$ <span id="ir">0.00</span></div>
+            <div>CSLL: R$ <span id="csll">0.00</span></div>
+            <div>Total de Tributos: R$ <span id="totalTributos">0.00</span></div>
+            <div>Valor Restante: R$ <span id="valorRestante">0.00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
