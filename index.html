@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impostos - Nota Fiscal</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclua o plugin jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container">
         <h1>NFS-E (kemuel)</h1>
         <div class="form-group">
             <label for="valor">Valor da Nota Fiscal:</label>
-            <input type="text" id="valor" placeholder="Insira o valor da nota fiscal">
+            <input type="text" id="valor" placeholder="R$">
             <button class="calcular" onclick="calcularTributos()">Calcular</button>
         </div>
         <div class="result" id="resultado">

@@ -5,11 +5,11 @@
     --cor-limpar-campo: #140408;
     --cor-divs: #f9f9f9; 
     --cor-primaria: #fff;
-    --fonte: cursive, sans-serif;
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 body {
-    font-family: var(--fonte);
+    font-family: var(--principal);
     background-color: var(--cor-fundo);
     color: #333;
     margin: 0;
