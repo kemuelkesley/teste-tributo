@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome Tributo</title>
+    <title>Impostos - Nota Fiscal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tributo (kemuel)</h1>
+    <main class="container">
+        <h1>NFS-E (kemuel)</h1>
         <div class="form-group">
-            <label for="valor">Valor da Nota:</label>
-            <input type="text" id="valor" placeholder="Insira o valor">
-            <button onclick="calcularTributos()">Calcular</button>
+            <label for="valor">Valor da Nota Fiscal:</label>
+            <input type="text" id="valor" placeholder="Insira o valor da nota fiscal">
+            <button class="calcular" onclick="calcularTributos()">Calcular</button>
         </div>
         <div class="result" id="resultado">
             <div>PIS: R$ <span id="pis">0.00</span></div>
@@ -22,7 +22,10 @@
             <div>Total de Tributos: R$ <span id="totalTributos">0.00</span></div>
             <div>Valor Restante: R$ <span id="valorRestante">0.00</span></div>
         </div>
-    </div>
+        <div class="form-group">
+            <button class="limpar__campo" onclick="limparCampos()">Limpar</button>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
