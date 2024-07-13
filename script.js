@@ -1,13 +1,13 @@
 function calcularTributos() {
     const valor = parseFloat(document.getElementById('valor').value.replace(',', '.'));
 
+
     if (isNaN(valor)) {
         alert('Por favor, insira um valor válido.');
         return;
     }
 
-    pressionarEnter();    
-
+    
     const pis = valor * 0.0065;
     const cofins = valor * 0.03;
     const ir = valor * 0.015;
@@ -33,6 +33,11 @@ function limparCampos(){
     document.getElementById('csll').textContent = '0.00';
     document.getElementById('totalTributos').textContent = '0.00';
     document.getElementById('valorRestante').textContent = '0.00';
+
+
+    if (document.getElementById('valor').value === ''){
+        document.getElementById('valor').focus();        
+    }
 }
 
 
@@ -40,6 +45,8 @@ function pressionarEnter(){
     valor.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
           calcularTributos();
-        }
-      });
+        }       
+    });
 }
+
+pressionarEnter();   
