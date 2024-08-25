@@ -34,7 +34,8 @@ This project was built using the following technologies:
 
 | Calculator                                                                                     
 |---------------------------------------------------------------------------------------------------- |
-| ![create](https://github.com/user-attachments/assets/b3162221-0564-465b-a104-1dbe98678740) 
+| ![NFS-E](https://github.com/user-attachments/assets/5a6ba3c1-2227-4854-849f-2497e47c3374)
+ 
 &nbsp;
 
 
